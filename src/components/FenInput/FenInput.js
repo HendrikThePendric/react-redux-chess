@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { updateFenValue } from '../../actions';
-import './FenForm.css';
+import './FenInput.css';
 
-const FenForm = props => {
+const FenInput = props => {
   const { fenValue, updateFenValue } = props;
   return (
     <input 
@@ -15,8 +15,7 @@ const FenForm = props => {
 };
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return { fenValue: state.fen };
 }
       
-export default connect(mapStateToProps, { updateFenValue })(FenForm);
+export default connect(mapStateToProps, { updateFenValue })(FenInput);

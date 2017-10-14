@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import FenForm from '../FenForm/FenForm';
+import FenInput from '../FenInput/FenInput';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <FenForm />
+        <FenInput />
         <h1>MOVE INPUTS</h1>
         <h1>BOARD</h1>
       </div>
