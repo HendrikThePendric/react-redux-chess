@@ -1,1 +1,9 @@
 
+.chess-game {
+  width: 582px;
+  margin: 0 auto;
+}
+
+.chess-game h3 {
+  text-align: center;
+}

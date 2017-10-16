@@ -1,6 +1,7 @@
 import { 
   COLUMN_LETTERS,
-  CHESS_PIECES
+  CHESS_PIECES,
+  INITIAL_FEN
 } from '../constants'
 
 const addBoardItem = (board, rowNr, colIndex, instr) => {
@@ -16,7 +17,12 @@ const addBoardItem = (board, rowNr, colIndex, instr) => {
 const toBoard = fenStr => {
   let rowNr  = 8;
   let board  = {};
-  const rows = fenStr.split(' ')[0].split('/');
+  const rows = fenStr.trim().split(' ')[0].split('/');
+  
+  if (!fenStr) {
+    fenStr = INITIAL_FEN;
+  }
+
   rows.forEach(row => {
     let colIndex          = 0;
     const colInstructions = row.split('');
@@ -35,7 +41,6 @@ const toBoard = fenStr => {
     });
     rowNr--;
   });
-  console.log(board);
   return board;
 };
 

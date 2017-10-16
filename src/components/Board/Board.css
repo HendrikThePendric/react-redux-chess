@@ -1,0 +1,28 @@
+.board-wrap .board {
+  border: 1px solid grey;
+  width: 560px;
+  height: 560px;
+  margin-left: 20px;
+}
+
+.board-wrap .row-legend {
+  float: left;
+  height: 560px;
+  width: 20px;
+}
+
+.board-wrap .row-legend .row-legend-item {
+  height: 70px;
+  line-height: 70px;
+}
+
+.board-wrap .column-legend {
+  padding-left: 20px;
+}
+
+.board-wrap .column-legend .column-legend-item {
+  float: left;
+  width: 70px;
+  text-align: center;
+  line-height: 24px;
+}

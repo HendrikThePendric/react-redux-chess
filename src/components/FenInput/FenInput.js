@@ -9,13 +9,14 @@ const FenInput = props => {
     <input 
       placeholder="Enter a valid FEN string" 
       value={fenValue}
-      onChange={ event => updateFenValue(event.target.value)}
+      className="fen-input"
+      onChange={ event => updateFenValue(event.target.value.trim()) }
     />
   )
 };
 
-const mapStateToProps = (state) => {
-  return { fenValue: state.fen };
+const mapStateToProps = (state) => { 
+  return { fenValue: state.fenValue };
 }
       
 export default connect(mapStateToProps, { updateFenValue })(FenInput);
