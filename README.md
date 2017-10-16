@@ -1,3 +1,34 @@
+
+# Basic Chess game
+This app does the following:
+- When a valid FEN string is inserted into the input it will display the corresponding chesspieces on the board
+- Chesspieces can be selected, deselected and togged (switch to another piece of the same color) by clicking
+- Once a chesspiece is selected the piece can be moved by clicking on an empty square or a square occupied by an opposite color. Any piece can be moved to any suitable square, this app does not follow the chess rules (yet)
+- When a chesspiece is moved the FEN input will be updated with the corresponding value
+
+### Run it
+This app uses **yarn** if you don't have it, please install it globally:
+```
+brew install yarn
+```
+Once you have yarn you can run the following command to install dependencies:
+```
+yarn install
+```
+And run the development server like this:
+```
+yarn start
+```
+If you would like to test a production build you can do so:
+```
+yarn build
+```
+And the serve from this directory with an HTTP server
+
+*The information below is generated automatically by Create React App. It is unrelated to this project, but I have kept it in for reference.*
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
